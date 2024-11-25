@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Car } from "./Car";
+import { Counter } from "./Counter";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Counter startValue={0} />
+      <Counter startValue={5} />
+      <Counter startValue={10} /> */}
+      <Car brand="VW" carColor="grey" />
+      <Car brand="Peugeot" carColor="blue" />
+      <Car brand="Kia" carColor="silver" />
     </div>
   );
 }
